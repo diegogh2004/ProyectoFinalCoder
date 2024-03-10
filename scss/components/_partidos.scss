@@ -1,0 +1,226 @@
+@import '../base/variables';
+
+.navbar-diego{
+    display: flex;
+    width: 100%;
+    background-color: #0a0a5c;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+    a{
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    img{
+        width: 70px;
+    };
+}
+.bodypartidos{
+    background-color: $bg-color-general;
+}
+.titulo-partidos {
+        display: flex;
+        justify-content: center;
+    }
+
+.container-partidos{
+    display: flex;
+    flex-direction: row;
+    ul{
+        display: flex;
+        border: 1px solid black;
+        background-color: #386890;
+        width: 33.3%;
+        img{
+            width: 90px;
+        }
+        p{
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+}
+
+#redes{
+    display: flex;
+    width: 600px;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+#redes a{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Celular Vertical*/
+@media only screen and (max-width: 480px){
+    .titulo-partidos{
+        display: flex;
+        justify-content: center;
+    }
+    .container-partidos{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            border: 1px solid black;
+            background-color: #386890;
+            width: fit-content;
+        img{
+            width: 100px;
+        }
+        p{
+            font-weight: bold;
+        }
+        }
+    }
+    #redes{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+/*Celular Horizontal*/
+@media only screen and (min-width:480px) and (max-width: 932px){
+    .container-partidos{
+        display: flex;
+        flex-direction: row;
+        ul{
+            display: flex;
+            border: 1px solid black;
+            background-color: #386890;
+            width: 33.3%;
+            img{
+                width: 90%;
+            }
+            p{
+                font-weight: bold;
+                font-size: small;
+            }
+        }
+    }
+    .titulo-partidos{
+        display: flex;
+        justify-content: center;
+    }
+    #redes{
+        display: flex;
+        width: 600px;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+    #redes a{
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+/*Tablet Horizontal*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .container-partidos{
+        display: flex;
+        flex-direction: row;
+        ul{
+            display: flex;
+            border: 1px solid black;
+            background-color: #386890;
+            width: 33.3%;
+            img{
+                width: 105%;
+            }
+            p{
+                font-weight: bold;
+                font-size: 130%;
+            }
+        }
+    }
+    .titulo-partidos{
+        display: flex;
+        justify-content: center;
+    }
+    #redes{
+        display: flex;
+        width: 600px;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+    #redes a{
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+/*Tablet Vertical*/
+@media only screen and (min-width:600px) and (max-width: 899px){
+    .container-partidos{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            border: 1px solid black;
+            background-color: #386890;
+            justify-content: space-between;
+            width: 100%;
+            img{
+                width: 120px;
+            }
+            p{
+                font-weight: bold;
+                font-size: 150%;
+                padding-top: 40px;
+            }
+        }
+    }
+    .titulo-partidos{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Laptop  y desktop*/
+@media only screen and (min-width: 1281px){
+    .titulo-partidos {
+        display: flex;
+        justify-content: center;
+    }
+
+.container-partidos{
+    display: flex;
+    flex-direction: row;
+    ul{
+        display: flex;
+        border: 1px solid black;
+        background-color: #386890;
+        width: 33.3%;
+        img{
+            width: 90px;
+        }
+        p{
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+}
+    #redes{
+        display: flex;
+        width: 600px;
+        padding-top: 60px;
+        justify-content: space-between;
+    }
+    #redes a{
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+}

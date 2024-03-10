@@ -1,0 +1,364 @@
+@import '../base/variables';
+
+/*NavBar*/
+.navbar-diego{
+    display: flex;
+    width: 100%;
+    background-color: $navbar-color;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+    a{
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    img{
+        width: 70px;
+    };
+}
+/*Inicio*/
+.container-inicio{
+    display: grid;
+    grid-template-areas: 
+    'noticia partidos'
+    'noticia video'
+    'redes video';
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    /*Partidos del dia*/
+    .carousel-partidos{
+        grid-area: partidos;
+        width: 500px;
+        height: 150px;
+    }
+
+    /*Video*/
+    .video{
+        grid-area: video;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Noticias*/
+    .carousel-noticias{
+        width: 700px;
+        grid-area: noticia;
+
+        .noticia{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            border: 2px solid black;
+            background-color: black;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .noticia1{
+            background-image: url(../multimedia/noticias/noticia1.jpg);
+            p{
+                padding-top: 270px;
+                padding-left: 10px;
+                color: white;
+                font-weight: bolder;
+                font-size:30px;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+        
+        .noticia2{
+            background-image: url(../multimedia/noticias/noticia2.jpeg);
+            p{
+                padding-top: 240px;
+                padding-left: 10px;
+                color: white;
+                font-weight: bolder;
+                font-size:30px;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+
+        .noticia3{
+            background-image: url(../multimedia/noticias/noticia3.jpg);
+            p{
+                padding-top: 240px;
+                padding-left: 10px;
+                color: white;
+                font-weight: bolder;
+                font-size:30px;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+
+        .boton{
+            width: fit-content;
+            border-width: 2px;
+            border-radius: 9999px;
+            border-color: yellow;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            color:black;
+            background-color: white;
+            padding: 10px 70px;
+            text-shadow: none;
+        }
+    }
+
+    /*Redes*/
+    #redes{
+        grid-area: redes;
+        display: flex;
+        width: 600px;
+        padding-top: 30px;
+        padding-left: 0px;
+        justify-content: space-evenly;
+    }
+    #redes a{
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+/*Celular Vertical*/
+@media only screen and (max-width: 480px){
+    body{
+        background-color: #416787;
+    }
+    .container-inicio{
+        display: grid;
+        grid-template-areas: 
+        'partidos'
+        'noticia'
+        'video'
+        'redes';
+        width: 100%;
+        justify-content: center;
+
+        .video{
+            width: 370px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-partidos{
+            width: 100%;
+            height: max-content;
+        }
+
+        .carousel-noticias{
+            width: 100%;
+            padding-top: 10px;
+            height: min-content;
+
+            .noticia{
+                height: 250px;
+                p{
+                    font-size: medium;
+                    padding-top: 125px;
+                }
+            }
+
+            .noticia1{
+                background-image: url(../multimedia/noticias/noticia1-sm.jpg);
+            }
+            .noticia2{
+                background-image: url(../multimedia/noticias/noticia2-sm.jpeg);
+            }
+            .noticia3{
+                background-image: url(../multimedia/noticias/noticia3-sm.jpg);
+            }
+            .boton{
+                width: fit-content;
+                border-width: 2px;
+                border-radius: 9999px;
+                border-color: yellow;
+                font-size: 10px;
+                font-weight: 700;
+                text-decoration: none;
+                color:black;
+                background-color: white;
+                padding: 5px 170px;
+                text-shadow: none;
+            }
+        }
+        #redes{
+            width: 98%;
+        }
+    }
+}
+
+/*Celular Horizontal*/
+@media only screen and (max-width: 932px) and (max-height:431px){
+    body{
+        background-color:#416787;
+    }
+
+    .container-inicio{
+        display: grid;
+        grid-template-areas: 
+        'partidos'
+        'noticia'
+        'video'
+        'redes';
+        width: 100%;
+        justify-content: center;
+
+        video{
+            display: flex;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .carousel-partidos{
+            display: flex;
+            width: 100%;
+            height: max-content;
+        }
+
+        .carousel-noticias{
+            padding-top: 20px;
+            width: fit-content;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+
+            .noticia1 p{
+                padding-top: 240px;
+            }
+
+            .noticia2 p{
+                padding-top: 200px;
+            }
+
+            .noticia3 p{
+                padding-top: 200px;
+            }
+        }
+
+        #redes{
+            width: 98%;
+        }
+    }
+}
+
+/*Tablet Horizontal*/
+@media only screen and (min-width: 900px){
+    .container-inicio{
+        display: grid;
+        grid-template-areas: 
+        'noticia partidos'
+        'noticia video'
+        'redes video';
+        width: 100%;
+        justify-content: center;
+
+        .partidos{
+            display: flex;
+            justify-content: start;
+        }
+        .carousel-partidos{
+            display: flex;
+            width: 100%;
+            height: max-content;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+        .video{
+            padding-left: 5px;
+        }
+        .carousel-noticias{
+            width: 610px;
+
+            .noticia{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+            }
+        }
+
+        #redes{
+            width: 98%;
+        }
+    }
+}
+
+/*Tablet Vertical*/
+@media only screen and (min-width: 600px){
+    .container-inicio{
+        display: grid;
+        grid-template-areas: 
+        'partidos'
+        'video'
+        'noticia'
+        'redes';
+        width: 100%;
+        justify-content: center;
+
+        video{
+            width: 98%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .carousel-partidos{
+            width: 98%;
+            height: max-content;
+        }
+        .noticia{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #redes{
+            padding-top: 40px;
+            width: 98%;
+        }
+    }
+}
+
+@media (min-width:1025px){
+    .container-inicio{
+        display: grid;
+        grid-template-areas: 
+        'noticia partidos'
+        'noticia video'
+        'redes video';
+        width: 100%;
+        justify-content: center;
+
+        .partidos{
+            display: flex;
+            justify-content: start;
+        }
+        .carousel-partidos{
+            display: flex;
+            width: 100%;
+            height: max-content;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+        .video{
+            padding-left: 15px;
+        }
+        .carousel-noticias{
+            width: 700px;
+
+            .noticia{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+            }
+        }
+
+        #redes{
+            width: 98%;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@import 'base/variables';
+body{
+    background-color: $bg-color-general;
+}
+
+@import '../scss/components/index';
+@import '../scss/components/equipos';
+@import '../scss/components/partidos';
+@import '../scss/components/posiciones';
+@import '../scss/components/noticias';
+@import '../scss/components/equipoindiv';
+

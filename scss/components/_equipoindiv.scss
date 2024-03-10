@@ -1,0 +1,302 @@
+.titulo-equipo{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content:center;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    img{
+        height: 43px;
+        padding-right: 50px;
+    }
+    p{
+        padding-right: 20px;
+    }
+}
+
+.container-jugadores{
+    ul{
+        display: flex;
+        width: auto;
+        height: min-content;
+        padding-top: 50px;
+        padding-left: 10px;
+        li{
+            display: block;
+            width: 30%;
+            p{
+                display: flex;
+                justify-content: center;
+                width: 170px;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                background-color: black;
+                border: 2px solid black;
+                color: whitesmoke;
+                width: 80%;
+            }
+        }
+        img{
+            width: 80%;
+            background-color: #f5f2d0;
+            border: 3px solid black;
+        }
+    }
+}
+
+.container-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        font-size: xx-large;
+        font-family: 'Lato', sans-serif;
+        padding-left: 40px;
+        li{
+            padding-right: 80px;
+        }
+        .redes-equipo {
+            display: flex;
+            width: 440px;
+            justify-content: space-around;
+            padding-top: 70px;
+        }
+    }
+}
+
+/*Celular Vertical*/
+@media only screen and (max-width: 480px){
+    .titulo-equipo{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        font-weight: bolder;
+        padding-top: 5px;
+        img{ 
+            height: 43px;
+            padding-left: 10px;
+        }
+    }
+
+    .container-jugadores{
+        ul{
+            display: flex;
+            width: 100%;
+            height: min-content;
+            padding-top: 50px;
+            padding-left: 10px;
+            li{
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                padding-left: 0px;
+                p{
+                    display: flex;
+                    justify-content: center;
+                    width: 170px;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 70%;
+                    background-color: black;
+                    border: 2px solid black;
+                    color: whitesmoke;
+                    width: 90%;
+                }
+            }
+            img{
+                width: 90%;
+                height: 70px;
+                background-color: #f5f2d0;
+                border: 3px solid black;
+            }
+        }
+    }
+
+    .container-info{
+        display: flex;
+        width: 100%;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: xx-large;
+            font-family: 'Lato', sans-serif;
+            padding-left: 20px;
+            li{
+                width: 350px;
+            }
+            .redes-equipo {
+                display: flex;
+                width: 350px;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+/*Celular Horizontal*/
+@media only screen and (min-width:480px) and (max-width: 932px){
+    .container-info{
+        display: flex;
+        width: 100%;
+        ul{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            'mapa video'
+            'redes redes';
+            flex-direction: column;
+            font-size: xx-large;
+            font-family: 'Lato', sans-serif;
+            padding-left: 20px;
+            li{
+                width: 350px;
+            }
+            .redes-equipo {
+                display: flex;
+                grid-area: redes;
+                width: 100%;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+/*Tablet Horizontal*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .container-info{
+        display: flex;
+        width: 100%;
+        ul{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            'mapa video'
+            'redes redes';
+            flex-direction: column;
+            font-size: xx-large;
+            font-family: 'Lato', sans-serif;
+            padding-left: 20px;
+            li{
+                width: 350px;
+            }
+            .redes-equipo {
+                display: flex;
+                grid-area: redes;
+                width: 100%;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+
+/*Color de fondo de cada equipo*/
+.body-suns{
+    background-color: #FA4B0A;
+}
+.body-celtics{
+    background-color: #008348;
+}
+.body-lakers{
+    background-color: #FDB927;
+}
+.body-bucks{
+    background-color: #00471C;
+    color: whitesmoke;
+}
+.body-clippers{
+    background-color: #1D428A;
+}
+.body-warriors{
+    background-color: #1D428A;
+}
+.body-sixers{
+    background-color: #003DA6;
+}
+.body-kings{
+    background-color: #4C128C;
+}
+.body-bulls{
+    background-color: #CD1F43;
+}
+.body-thunder{
+    background-color: #007DC3;
+}
+.body-knicks{
+    background-color: #F48326;
+}
+.body-timberwolves{
+    background-color: #0C233F;
+    color: whitesmoke;
+}
+.body-nuggets{
+    background-color: #0E2240;
+    color: #AC7A2D;
+}
+.body-blazers{
+    background-color: #C8102E;
+}
+.body-jazz{
+    background-color: #fff21f;
+}
+.body-grizzlies{
+    background-color: #0C2340;
+    color:whitesmoke;
+}
+.body-pelicans{
+    background-color: #0F1840;
+    color: whitesmoke;
+}
+.body-mavericks{
+    background-color: #00285E;
+    color: whitesmoke;
+}
+.body-rockets{
+    background-color: #F72F30;
+}
+.body-cavaliers{
+    background-color: #72253D;
+}
+.body-hawks{
+    background-color: #C8102E;
+}
+.body-heat{
+    background-color: #99002E;
+}
+.body-hornets{
+    background-color: #260F54;
+    color: whitesmoke;
+}
+.body-magic{
+    background-color: #0266AC;
+}
+.body-pacers{
+    background-color: #FFB300;
+}
+.body-pistons{
+    background-color: #0D2240;
+    color: whitesmoke;
+}
+.body-raptors{
+    background-color: #AC0010;
+}
+.body-wizards{
+    background-color: #002B5C;
+    color: whitesmoke;
+}
+.body-spurs{
+    background-color: #C4CDD3;
+}
+.body-nets{
+    background-color: #3C3C3C;
+}
