@@ -1011,7 +1011,7 @@ body {
   padding-left: 0px;
 }
 .container-noticias ul li {
-  background-color: whitesmoke;
+  background-color: white;
   width: min-content;
   border: 5px solid #ffffbf;
 }
@@ -1060,7 +1060,7 @@ body {
     padding-left: 0px;
   }
   .container-noticias ul li {
-    background-color: #ffffbf;
+    background-color: white;
     width: min-content;
     border: 5px solid #ffffbf;
   }
@@ -1090,7 +1090,7 @@ body {
     padding-top: 10px;
   }
   .container-noticias ul li {
-    background-color: #ffffbf;
+    background-color: white;
     width: min-content;
     border: 5px solid #ffffbf;
   }
