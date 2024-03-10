@@ -38,6 +38,12 @@ body {
   /*Noticias*/
   /*Redes*/
 }
+.container-inicio .partidos {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding-left: 65px;
+}
 .container-inicio .carousel-partidos {
   grid-area: partidos;
   width: 500px;
@@ -125,7 +131,7 @@ body {
 /*Celular Vertical*/
 @media only screen and (max-width: 480px) {
   body {
-    background-color: #416787;
+    background-color: #3883c2;
   }
   .container-inicio {
     display: grid;
@@ -139,9 +145,16 @@ body {
     display: flex;
     justify-content: center;
   }
+  .container-inicio .video iframe {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
   .container-inicio .partidos {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding-left: 0px;
   }
   .container-inicio .carousel-partidos {
     display: flex;
@@ -175,7 +188,7 @@ body {
     border-width: 2px;
     border-radius: 9999px;
     border-color: yellow;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     text-decoration: none;
     color: black;
@@ -190,7 +203,7 @@ body {
 /*Celular Horizontal*/
 @media only screen and (max-width: 932px) and (max-height: 431px) {
   body {
-    background-color: #416787;
+    background-color: #3883c2;
   }
   .container-inicio {
     display: grid;
@@ -340,10 +353,6 @@ body {
 }
 .navbar-diego img {
   width: 70px;
-}
-
-.logoequipo:hover {
-  width: 70%;
 }
 
 .oeste {
