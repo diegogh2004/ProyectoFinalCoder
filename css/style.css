@@ -139,8 +139,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  .container-inicio .partidos {
+    display: flex;
+    justify-content: center;
+  }
   .container-inicio .carousel-partidos {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
     height: max-content;
   }
   .container-inicio .carousel-noticias {
@@ -224,7 +230,7 @@ body {
   }
 }
 /*Tablet Horizontal*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .container-inicio {
     display: grid;
     grid-template-areas: "noticia partidos" "noticia video" "redes video";
@@ -233,17 +239,19 @@ body {
   }
   .container-inicio .partidos {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    width: 90%;
   }
   .container-inicio .carousel-partidos {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: max-content;
     padding-left: 15px;
     padding-bottom: 20px;
   }
   .container-inicio .video {
     padding-left: 5px;
+    width: 90%;
   }
   .container-inicio .carousel-noticias {
     width: 610px;
