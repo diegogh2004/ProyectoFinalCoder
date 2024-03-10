@@ -1011,7 +1011,7 @@ body {
   padding-left: 0px;
 }
 .container-noticias ul li {
-  background-color: #ffffbf;
+  background-color: whitesmoke;
   width: min-content;
   border: 5px solid #ffffbf;
 }
