@@ -264,7 +264,13 @@ body {
   }
   .container-inicio .video {
     padding-left: 5px;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-inicio .video iframe {
+    display: flex;
+    justify-content: center;
   }
   .container-inicio .carousel-noticias {
     width: 610px;
